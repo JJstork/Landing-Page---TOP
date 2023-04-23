@@ -3,20 +3,44 @@ body {
     padding: 0;
     margin: 0;
 }
+/* Properties for all buttons - start */
+button {
+    background-color: #3882F6;
+    border: none;
+    border-radius: 5px;
+    padding: 5px 15px;
+    color: #F9FAF8;
+    text-align: center;
+    text-decoration: none;
+    transition-duration: 0.2s; /* Slight delay for the hover */
+}
+
+button:hover { /* Make button more interactive */
+    background-color: #F9FAF8;
+    color: #1F2937;
+    cursor:pointer;
+  }
+
+/* Properties for all buttons - end */  
 
 .header {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
-    gap: 700px;
     color: #F9FAF8;
     padding: 15px;
+    margin: 0 100px 0 ;
 }
 
 .header>ul {
     display: flex;
     list-style: none;
     gap: 20px;
+}
+
+.header-link {
+    text-decoration: none;
+    color: #F9FAF8;
 }
 
 .home-logo {
@@ -26,10 +50,11 @@ body {
 
 .hero-content {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
     padding: 80px;
     flex-shrink: 0;
+    margin: 0 50px 0 ;
 }
 
 .hero-text {
@@ -50,31 +75,19 @@ body {
 .hero-text>p {
     max-width: 400px;
     font-size: 18px;
+    margin: 0;
 }
 
 .hero-content>img {
-    max-width: 500px;
-    max-height: 200px;
+    max-width: 700px;
+    max-height: 300px;
     border-radius: 20px;
-    margin-left: 120px;
 }
 
-button {
-    background-color: #3882F6;
-    border: none;
-    border-radius: 5px;
-    padding: 5px 15px;
-    color: #F9FAF8;
-    text-align: center;
-    text-decoration: none;
-    transition-duration: 0.2s; /* Slight delay for the hover */
+.signup-question-button {
+    margin-top: 5px;
 }
 
-button:hover { /* Make button more interactive */
-    background-color: #F9FAF8;
-    color: #1F2937;
-    cursor:pointer;
-  }
 
 .container-1 {
     background-color: #1F2937;
@@ -134,7 +147,11 @@ button:hover { /* Make button more interactive */
     align-self: flex-end;
     font-size: 20px;
     font-weight: 1000;
-    margin-right: 400px;
+}
+
+.quote-alignment { /* Made this so I could align the name and keep the positioning when resizing the client's window */
+    display: flex;
+    flex-direction: column;
 }
 
 .container-4 {
