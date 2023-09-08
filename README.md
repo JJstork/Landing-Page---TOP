@@ -1,2 +1,1 @@
-# Landing-Page---TOP
-Project part of The Odin Project
+# stork-coaching-prototype
